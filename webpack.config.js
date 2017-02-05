@@ -10,6 +10,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     devtool: 'source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'src', 'views'),
+        publicPath: 'http://localhost:8080/assets/'
+    },
     module: {
         rules: [
             {
