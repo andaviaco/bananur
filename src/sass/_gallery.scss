@@ -1,0 +1,27 @@
+
+.gallery {
+    background-color: $light-background;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+
+    .post-preview {
+        color: $text-color;
+        display: flex;
+        flex-basis: 20%;
+        justify-content: center;
+        text-decoration: none;
+
+        figure {
+            margin: 0;
+        }
+
+        img {
+            border: 3px solid $background-highlight;
+        }
+
+        .caption {
+        }
+    }
+}

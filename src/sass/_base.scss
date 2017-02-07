@@ -1,0 +1,94 @@
+
+body {
+    font-size: 16px;
+    background-color: $dark-background;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    background-color: $light-background;
+    box-shadow: 0 0 11px 1px $dark-text;
+    height: 50px;
+    width: 100%;
+}
+
+.logo {
+    background: url('../img/bananur-logo.png') center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 34px;
+    width: 83px;
+}
+
+.btn-link {
+    background-color: $brand-color;
+    border: 1px solid $brand-color;
+    border-radius: 3px;
+    color: $dark-text;
+    display: inline-block;
+    padding: 0.25em 1em;
+    text-decoration: none;
+}
+
+.topbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .global-search {
+        display: inline-block;
+    }
+
+    .user-nav {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+
+        a {
+            color: $text-color;
+            padding: 0.5em 1em;
+            text-decoration: none;
+
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+
+    .nav-section {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.filters {
+    color: white;
+    font-size: 1.5em;
+    line-height: 33px;
+    margin: 50px 0;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+        color: $brand-color;
+    }
+
+    &:focus {
+        border: none;
+    }
+}
