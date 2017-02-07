@@ -6,7 +6,7 @@ module.exports = {
     entry: path.join(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'assets'),
-        publicPath: '/dist/',
+        publicPath: '/assets/',
         filename: 'bundle.js'
     },
     devtool: 'source-map',
@@ -36,8 +36,9 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({
-                    fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap!sass-loader?sourceMap'
+                use: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    use: 'css-loader?sourceMap!sass-loader?sourceMap'
                 })
             },
             {
@@ -46,10 +47,26 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-                ]
+                loaders: ['file-loader?context=src/images&name=images/[path][name].[ext]', {
+                    loader: 'image-webpack-loader',
+                    query: {
+                        mozjpeg: {
+                            progressive: true,
+                        },
+                        gifsicle: {
+                            interlaced: false,
+                        },
+                        optipng: {
+                            optimizationLevel: 4,
+                        },
+                        pngquant: {
+                            quality: '75-90',
+                            speed: 3,
+                        },
+                    },
+                }],
+                exclude: /node_modules/,
+                include: __dirname,
             }
         ],
     },
@@ -60,9 +77,11 @@ module.exports = {
                 sassLoader: {
                     includePaths: [path.resolve(__dirname, 'src', 'sass')],
                 },
-                context: '/'
+                context: __dirname,
             }
         }),
-        new ExtractTextPlugin('styles.css'),
+        new ExtractTextPlugin({
+            filename: 'styles.css',
+        }),
     ],
 };
