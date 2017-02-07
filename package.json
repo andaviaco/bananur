@@ -4,7 +4,7 @@
   "description": "My own Imgur with blackjack and bananas.",
   "main": "src/js/index.js",
   "scripts": {
-    "start-dev": "node_modules/.bin/webpack-dev-server",
+    "start-dev": "node_modules/.bin/webpack-dev-server  --inline --hot",
     "build": "NODE_ENV=production node_modules/.bin/webpack -p",
     "build-dev": "NODE_ENV=development node_modules/.bin/webpack -d --progress",
     "build-dev-watch": "NODE_ENV=development node_modules/.bin/webpack -d --progress --watch",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/andaviaco/bananur#readme",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "webpack": "^2.2.1"
   },
   "devDependencies": {
@@ -28,9 +29,10 @@
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.2",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "image-webpack-loader": "^3.2.0",
+    "initialize-css": "^1.3.2",
     "node-sass": "^4.5.0",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
