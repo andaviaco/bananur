@@ -14,7 +14,8 @@
         text-decoration: none;
 
         figure {
-            margin: 0;
+            background-color: $background-highlight;
+            margin: 0 0 1em 0;
         }
 
         img {
@@ -22,6 +23,8 @@
         }
 
         .caption {
+            padding: 0.5em;
+            font-size: 14px;
         }
     }
 }
