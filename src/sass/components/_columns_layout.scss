@@ -1,0 +1,14 @@
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+
+    .main-column {
+        border-radius: 3px;
+        flex-basis: 70%;
+    }
+
+    .aside-column {
+        flex-basis: 28%;
+    }
+}

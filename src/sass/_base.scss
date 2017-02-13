@@ -5,17 +5,21 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+header {
+    background-color: $lighter-background;
+    box-shadow: 0 0 11px 1px $dark-text;
+    height: 50px;
+    width: 100%;
+}
+
+.main-container {
+    margin-top: 20px;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
     height: 100%;
-}
-
-header {
-    background-color: $light-background;
-    box-shadow: 0 0 11px 1px $dark-text;
-    height: 50px;
-    width: 100%;
 }
 
 .logo {
@@ -26,14 +30,65 @@ header {
     width: 83px;
 }
 
-.btn-link {
-    background-color: $brand-color;
-    border: 1px solid $brand-color;
+.btn {
+    $default-bg-color: $brand-color;
+
+    background-color: $default-bg-color;
+    border: 1px solid $default-bg-color;
     border-radius: 3px;
     color: $dark-text;
+    cursor: pointer;
     display: inline-block;
     padding: 0.25em 1em;
+
+    &:hover {
+        background-color: darken($default-bg-color, 10%);
+        border-color: darken($default-bg-color, 10%);
+    }
+}
+
+.btn-link {
+    @extend .btn;
+
     text-decoration: none;
+}
+
+.btn-block {
+    @extend .btn;
+
+    width: 100%;
+}
+
+.btn-panel {
+    width: 100%;
+    padding: 1em;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba($light-background, 0.5);
+
+        .fa {
+            color: $brand-color;
+        }
+    }
+}
+
+.custom-select {
+    background-color: $light-background;
+    border-radius: 3px;
+    border: none;
+    color: $text-color;
+    padding: 5px 10px 4px 7px;
+    outline: 0;
+}
+
+.input-group {
+    padding: 0 0.5em;
+    margin-bottom: 1em;
 }
 
 .topbar {

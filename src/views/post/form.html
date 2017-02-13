@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bananur</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="topbar">
+                    <div class="nav-section">
+                        <a href="/">
+                            <div class="logo" alt="bananagur logo">
+                            </div>
+                        </a>
+
+                        <a class="btn-link" href="/post">New post</a>
+                    </div>
+
+                    <div class="nav-section">
+                        <div class="global-search">
+                            <button class="btn-icon" type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <ul class="user-nav">
+                            <li>
+                                <a href="/signin">sign in</a>
+                            </li>
+                            <li>
+                                <a href="/signup">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-container">
+            <div class="container">
+                <section class="post">
+                    <form class="columns" method="post">
+                        <div class="main-column">
+                            <div class="title-container">
+                                <h1 class="post-title contenteditable" contenteditable="true" placeholder="Give your post a title..."></h1>
+                            </div>
+
+                            <article class="post-image">
+                                <div class="input-group">
+                                    <input type="file" name="image">
+                                </div>
+
+                                <figure>
+                                    <img src="http://placehold.it/700x350" alt="">
+
+                                    <figcaption class="description-container">
+                                        <p class="post-description contenteditable" contenteditable="true" placeholder="Image description"></p>
+                                    </figcaption>
+                                </figure>
+                            </article>
+
+                            <button class="btn-panel">
+                                <span><i class="fa fa-plus"></i> Add another image</span>
+                            </button>
+                        </div>
+
+                        <div class="aside-column">
+                            <div class="right-form">
+                                <div class="input-group">
+                                    <select class="custom-select" name="topic">
+                                        <option value="1" selected>No Topic</option>
+                                        <option value="2">Funny</option>
+                                        <option value="3">Science and Tech</option>
+                                        <option value="4">Gamming</option>
+                                        <option value="5">Aww</option>
+                                        <option value="6">Awesome</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="public">
+                                        <input id="public" type="checkbox" name="mature" value=""> Public
+                                    </label>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="mature">
+                                        <input id="mature" type="checkbox" name="mature" value=""> Mature
+                                    </label>
+                                </div>
+
+                                <button class="btn-block" type="submit" name="save">Submit Post</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <script src="/assets/bundle.js" charset="utf-8"></script>
+    </body>
+</html>
