@@ -42,13 +42,13 @@
         <div class="container">
             <div class="filters">
                 <span>The </span>
-                <select class="" name="section">
+                <select class="custom-select" name="section">
                     <option value="hot" selected>Most Viral</option>
                     <option value="funny">Funnier</option>
                     <option value="inspiring">Most Inspiring</option>
                 </select>
                 <span>images on the Internet, sorted by </span>
-                <select class="" name="sort">
+                <select class="custom-select" name="sort">
                     <option value="viral" selected>popularity</option>
                     <option value="time">newest first</option>
                     <option value="score">highest scoring</option>
@@ -57,96 +57,159 @@
         </div>
 
         <div class="container">
-            <section class="gallery">
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+            <div class="view-style">
+                <button class="btn-icon">
+                    <i class="fa fa-th"></i>
+                </button>
+                <button class="btn-icon">
+                    <i class="fa fa-th-list"></i>
+                </button>
+            </div>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+            <section class="gallery-container">
+                <table class="gallery-table">
+                    <thead>
+                        <th>Image</th>
+                        <th>Description</th>
+                    </thead>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                    <tbody>
+                        <tr>
+                            <td class="image-cell">
+                                <a href="#">
+                                    <figure>
+                                        <img src="http://placehold.it/120x120" alt="">
+                                    </figure>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    My banana OC
+                                </a>
+                            </td>
+                        </tr>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                        <tr>
+                            <td class="image-cell">
+                                <a href="#">
+                                    <figure>
+                                        <img src="http://placehold.it/120x120" alt="">
+                                    </figure>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    My banana OC
+                                </a>
+                            </td>
+                        </tr>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                    </tbody>
+                </table>
+            </section>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+            <section class="gallery-container">
+                <div class="gallery">
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <div class="actions">
+                                    <button class="btn-icon upvote">
+                                        <i class="fa fa-arrow-up"></i>
+                                    </button>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                                    <button class="btn-icon downvote">
+                                        <i class="fa fa-arrow-down"></i>
+                                    </button>
+                                </div>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
 
-                <a href="#" class="post-preview">
-                    <article class="">
-                        <figure>
-                            <img src="http://placehold.it/180x180" alt="">
-                            <figcaption class="caption">My banana OC</figcaption>
-                        </figure>
-                    </article>
-                </a>
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+
+                    <a href="#" class="post-preview">
+                        <article class="">
+                            <figure>
+                                <img src="http://placehold.it/180x180" alt="">
+                                <figcaption class="caption">My banana OC</figcaption>
+                            </figure>
+                        </article>
+                    </a>
+                </div>
             </section>
         </div>
 

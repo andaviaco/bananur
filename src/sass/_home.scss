@@ -1,0 +1,13 @@
+@import "components/gallery-table";
+@import "components/gallery";
+
+.view-style {
+    margin-bottom: 0.5em;
+    text-align: right;
+}
+
+.gallery-container {
+    background-color: $lighter-background;
+    border-radius: 5px;
+    padding: 1em;
+}

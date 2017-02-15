@@ -1,0 +1,36 @@
+
+.gallery-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: $text-color;
+    width: 100%;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    td, th {
+        border-bottom: 1px solid $placeholder-color;
+    }
+
+    th {
+        padding: 0.5em;
+    }
+
+    .image-cell {
+        padding: 0.5em;
+        width: 120px;
+
+        figure {
+            height: 120px;
+            margin: 0;
+            width: 120px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

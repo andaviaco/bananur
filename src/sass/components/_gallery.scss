@@ -1,0 +1,45 @@
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .post-preview {
+        color: $text-color;
+        display: flex;
+        flex-basis: 20%;
+        justify-content: center;
+        text-decoration: none;
+
+        figure {
+            background-color: $background-highlight;
+            margin: 0 0 1em 0;
+            position: relative;
+        }
+
+        img {
+            border: 3px solid $background-highlight;
+        }
+
+        .actions {
+            background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 14%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 14%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 14%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+            height: 2em;
+            left: 3px;
+            text-align: right;
+            top: 3px;
+            position: absolute;
+            width: 180px;
+
+            .downvote:hover {
+                color: red;
+            }
+        }
+
+        .caption {
+            padding: 0.5em;
+            font-size: 14px;
+        }
+    }
+}
