@@ -1,0 +1,228 @@
+$yahoo-color: #7B0099;
+$google-color: #D34836;
+$twitter-color: #4099FF;
+$facebook-color: #3A558E;
+
+#backbananur{
+    font-size: 13px;
+    line-height: 28px;
+    position: fixed;
+    margin: 20px;
+    height: 30px;
+    padding-left: 15px;
+    cursor: pointer;
+    opacity: .9;
+
+    a{
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.password{
+    padding: 0px;
+    display: flex;
+}
+
+input.sing-input{
+    height: 32px;
+    border: 1px solid transparent;
+    outline: 0;
+    margin-bottom: 10px;
+    letter-spacing: .02em;
+    padding: 5px 10px;
+    background: #191919;
+    color: $text-color;
+
+    &:focus{
+       border: 1px solid $brand-color;
+    }
+}
+
+input[type=text].signin-bananur {
+    width: 320px;
+    border-radius: 5px;
+}
+
+input[type=password].signin-bananur  {
+    width: 262px;
+    border-radius: 5px 0 0 5px;
+}
+
+a.forgot-password {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.forgot-password {
+    height: 32px;
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background: #404040;
+}
+
+.signin-container {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    padding-top: 80px;
+    color: $text-color;
+}
+
+.signin-logo{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+
+        img{
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .signin-label{
+        font-size: 11px;
+        letter-spacing: .03em;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.8);
+    }
+
+    /* Seccion de login con cuentas de facebook, twitter, google y yahoo */
+    .signin-social{
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        border-radius: 5px;
+        background: $light-background;
+        box-shadow: 2px 2px 9px 3px rgba(0,0,0,.2);
+
+        a {
+            color: white;
+            background: #212121;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 21px;
+         }
+    }
+
+    .sigin{
+        padding-top: 8px;
+        border-bottom: 5px solid;
+        cursor: pointer;
+        margin: 3px;
+        transition: background-color .5s;
+    }
+
+    .sigin-item{
+        max-width: 86px;
+        width: 74px;
+        height: 27px;
+    }
+
+    .sigin-facebook{
+        border-bottom-color: $facebook-color;
+
+        &:hover {
+            background-color: $facebook-color;
+        }
+    }
+
+    .sigin-twiiter{
+        border-bottom-color: $twitter-color;
+
+        &:hover {
+            background-color: $twitter-color;
+        }
+    }
+
+    .sigin-google{
+        border-bottom-color:  $google-color;
+
+        &:hover {
+            background-color: $google-color;
+        }
+    }
+
+    .sigin-yahoo{
+        border-bottom-color: $yahoo-color;
+        
+        &:hover {
+            background-color: $yahoo-color;
+        }
+    }
+
+    /* Seccion de registro de datos */
+    .signin-register{
+        border-radius: 5px;
+        background: $light-background;
+        max-height: 999px;
+        height: auto;
+        opacity: 1;
+        overflow: hidden;
+        background: #2C2F34;
+        padding: 15px;
+        vertical-align: baseline;
+        font-size: .7em;
+        box-shadow: 2px 2px 9px 3px rgba(0,0,0,.2);
+
+        .register-input{
+            width: 320px;
+            height: 32px;
+            border-radius: 5px;
+            font-family: inherit;
+            border: 1px solid transparent;
+            outline: 0;
+            margin-bottom: 10px;
+            letter-spacing: .02em;
+            padding: 5px 10px;
+            background: #191919;
+            color: $text-color;
+
+            &:focus{
+                border: 1px solid $brand-color;
+            }
+        }
+    }
+
+    /* Botones de loguear o registrar */
+    .register-buttons{
+      float: right;
+      padding-top: 10px;
+
+      .normal-sigin{
+        font-size: 12px;
+        padding-right: 5px;
+        color: white;
+        text-decoration: none;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.8);
+      }
+
+      .btn-sign{
+        cursor: pointer;
+        background: #5c69ff;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: white;
+        }
+    }
